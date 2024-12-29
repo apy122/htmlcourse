@@ -1,0 +1,17 @@
+h1{
+    font-family: monospace;
+    color: red;
+}
+h2{
+    font-family: sans-serif;
+    color: green;
+}
+.normal{
+    font-family: cursive;
+    color: blue;
+}
+.destacado{
+    font-family: cursive;
+    color: red;
+    background-color: yellow;
+}

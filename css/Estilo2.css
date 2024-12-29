@@ -1,0 +1,17 @@
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculos{
+    background-color: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.resultado{
+    background-color: yellow;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
