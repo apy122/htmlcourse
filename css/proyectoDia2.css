@@ -1,0 +1,35 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    background-color: purple;
+}
+.menu{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.queEs{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.catalogo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.Productos{
+    margin-right:  20px;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    border: 3px solid black;
+    padding: 50px;
+    
+}
+.formulario{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: justify;
+}

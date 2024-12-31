@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit" onclick="saludarUsuario()">Enviar</button>
+    <script>
+        function saludarUsuario(){
+            let name= document.getElementById("name").value;
+            alert("Hola"+" "+ name);
+        }
+    </script>
+</body>
+</html>
