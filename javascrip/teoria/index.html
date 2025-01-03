@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/javascrip/teoria/estilo.css">
+</head>
+<body onload="comenzarReloj()">
+    <label for="time">Time alarm:</label>
+    <input type="number" id="tiempoElegido">
+    <button onclick="comenzarTiempo()">alarma</button>
+    <h1 id="textoAlarma">00:00:00</h1>
+    <audio  id="audioAlarma" src="/audio/Don Omar - El Señor De La Noche (Lyric Video).mp3" type="audio/mp3">Sonido no habilitado</audio>
+    <script>
+        let elementoSegundos= document.getElementById("tiempoElegido");
+        let elementoAlarma=document.getElementById("textoAlarma");
+        let elementoAudio=document.getElementById("audioAlarma");
+
+        function comenzarTiempo(){
+            setTimeout(tiempoCumplido, 1000*elementoSegundos.value);
+        }
+        
+        function tiempoCumplido(){
+            elementoAlarma.textContent="Encendido";
+            elementoAlarma.style.color="green";
+            elementoAudio.play();
+        }
+        function comenzarReloj(){
+            setInterval(tikTak, 1000);
+        }
+        function tikTak(){
+            let tiempoActual= new Date();
+            let horas=tiempoActual.getHours();
+            let minutos=tiempoActual.getMinutes();
+            let segundos=String (tiempoActual.getSeconds()).padStart(2,0);
+
+            let textoHora= horas+":"+minutos+":"+segundos;
+            elementoAlarma.textContent=textoHora;
+        }
+
+    </script>
+</body>
+</html>

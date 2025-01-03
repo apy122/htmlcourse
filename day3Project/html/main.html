@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test De Inteligencia</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Test De Inteligencia</h1>
+        <div class="cuadroTiempo">
+            <h3 class="tituloTiempo">Tiempo restante:</h3>
+            <h3 id="tiempo">00:00:00</h3>
+        </div>
+    </header>
+    <main>
+        <ol>
+            <div class="preguntas">
+                <li><label for="respuesta1">¿Cuál es el río más largo del mundo?</label></li>
+                <input type="text" name="" class="respuesta" id="respuesta1" autocomplete="off">
+            </div>
+            <div class="preguntas">
+                <li><label for="respuesta2"> ¿En qué año comenzó la Segunda Guerra Mundial?</label></li>
+                <input type="text" name="" class="respuesta" id="respuesta2" autocomplete="off">
+            </div>
+            <div class="preguntas">
+                <li><label for="respuesta3">¿Cuál es el planeta más grande del sistema solar?</label></li>
+                <input type="text" name="" class="respuesta" id="respuesta3" autocomplete="off">
+            </div>
+            <div class="preguntas">
+                <li><label for="respuesta4">¿Quién escribió "Don Quijote de la Mancha"?</label></li>
+                <input type="text" name="" class="respuesta" id="respuesta4" autocomplete="off">
+            </div>
+            <div class="preguntas">
+                <li><label for="respuesta5">¿Cuántos jugadores tiene un equipo de fútbol en el campo?</label></li>
+                <input type="text" name="" class="respuesta" id="respuesta5" autocomplete="off">
+            </div>
+        </ol>
+    </main>
+    <footer>
+        <button onclick="reiniciar()">Reiniciar</button>
+        <button onclick="listo()">Listo!</button>
+    </footer>
+
+    <script src="../javascrip/programacion.js"></script>
+</body>
+</html>
